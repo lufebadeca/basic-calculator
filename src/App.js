@@ -26,28 +26,28 @@ function App() {
     e.preventDefault(); 
     const value = Number(inputRef.current.value); //capturar antes, debido a problemas de sincronia
     setResult(result => result + value ); 
-    inputRef.current.value = "";
+    //inputRef.current.value = "";
   }; 
  
   function minus(e) { 
     e.preventDefault(); 
     const value = Number(inputRef.current.value); //capturar antes, debido a problemas de sincronia
     setResult(result => result - value ); 
-    inputRef.current.value = "";
+    //inputRef.current.value = "";
   };
  
   function times(e) { 
     e.preventDefault(); 
     const value = Number(inputRef.current.value); //capturar antes, debido a problemas de sincronia
     setResult(result => result * value ); 
-    inputRef.current.value = "";
+    //inputRef.current.value = "";
   }; 
  
   function divide(e) { 
     e.preventDefault(); 
     const value = Number(inputRef.current.value); //capturar antes, debido a problemas de sincronia
     setResult(result => result / value ); 
-    inputRef.current.value = "";
+    //inputRef.current.value = "";
   };
 
   function deleteOne(e) { 
@@ -102,9 +102,9 @@ function App() {
           <button onClick={times} className="operation">x</button>
           <button onClick={divide} className="operation">/</button>
 
-          <button onClick={deleteOne} className="control">⇐</button>
-          <button onClick={resetInput} className="control">C</button>
-          <button onClick={resetResult} className="control">CE</button>
+          {/* <button onClick={deleteOne} className="control">⇐</button> */}
+          <button onClick={resetInput} className="control">reset input</button>
+          <button onClick={resetResult} className="control">reset result</button>
         </div>
  
       </form> 

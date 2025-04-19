@@ -60,6 +60,7 @@ button:hover{
 button.control {
   background: tomato;
   color: white;
+  grid-column: span 2;
 }
 
 button.operation {
